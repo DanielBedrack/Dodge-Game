@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="DodgeGame_Project.MainPage"
+     x:Name="XamlPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DodgeGame_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="FatherGrid">
+        <Canvas  x:Name="GameON">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/Assets/resturant image.jpg"/>
+            </Canvas.Background>
+
+            <Button x:Name="Pause_Continue" Content="Pause" Canvas.Left="45" Canvas.Top="30" FontWeight="Bold" Height="58" VerticalAlignment="Top" Width="80" Click="Pause_Continue_Click"/>
+            <Button x:Name="Reset" Content="Start" Canvas.Left="1154" Canvas.Top="30" FontWeight="Bold" Height="58" VerticalAlignment="Top" Width="80" Click="Reset_Click"/>
+            <TextBlock x:Name="Score" Canvas.Left="580" TextWrapping="Wrap" Text="score: " Canvas.Top="50" Height="55" Width="100" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+    </Grid>
+
+
+</Page>
+   
