@@ -12,8 +12,8 @@ namespace DodgeGame_Project
     {
         public static BitmapImage badGuy = new BitmapImage(new Uri(@"ms-appx:///Assets/Salat_bowl.png"));
         public const int ENEMY_SPEED = 2;
-        const int WIDTH = 50;
-        const int HEIGHT = 50;
+        const int WIDTH = 90;
+        const int HEIGHT = 90;
         public bool IsAlive = true;
 
         public EnemyUnit(int x, int y) : base(WIDTH, HEIGHT, ENEMY_SPEED, badGuy)

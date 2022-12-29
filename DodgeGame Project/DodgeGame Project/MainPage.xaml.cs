@@ -93,7 +93,7 @@ namespace DodgeGame_Project
             themeSong.Play();
             Reset.Content = "Reset";
             game.score = 0;
-            Score.Text = $"Dounats caught: 0";
+            Score.Text = $"Score: 0";
 
         }
 

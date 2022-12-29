@@ -15,7 +15,7 @@ namespace DodgeGame_Project
     internal class GameBoard// includes the player class and enemy list
     {
         int boardWidth, boardHeight;
-        const int ENEMY_COUNT = 10;
+        const int ENEMY_COUNT = 5;
         DispatcherTimer timer;
         DispatcherTimer DounatTimer;
         PlayerUnit player;
@@ -63,7 +63,7 @@ namespace DodgeGame_Project
 
             for (int i = 0; i < ENEMY_COUNT; i++)
             {
-                int locX= 150 * (i + 1);
+                int locX= 350 * (i + 1);
                 int locY= r.Next(boardHeight - 600);
                 EnemyUnit newEnemy = new EnemyUnit(locX,locY);
                 enemies.Add(newEnemy);
@@ -134,7 +134,7 @@ namespace DodgeGame_Project
                 if (DetectDounatTouch(dounats[i]))
                 {
                     score++;
-                    txtScore.Text = $"Dounats caught: {score}";
+                    txtScore.Text = $"Score: {score}";
                 }
             }
 
@@ -218,7 +218,7 @@ namespace DodgeGame_Project
         public bool ClashAWall()// checks if player is out of bounds
         {
             if (Canvas.GetTop(player.pic) > 600 || Canvas.GetTop(player.pic) < 0) return false;
-            if (Canvas.GetLeft(player.pic) > 1220 || Canvas.GetLeft(player.pic) < 0) return false;
+            if (Canvas.GetLeft(player.pic) > 1500 || Canvas.GetLeft(player.pic) < 0) return false;
             return true;
 
         }

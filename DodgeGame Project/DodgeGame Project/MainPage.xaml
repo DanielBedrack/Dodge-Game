@@ -7,16 +7,58 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid x:Name="FatherGrid">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Width="1500" Height="1000">
+    <Grid x:Name="FatherGrid" Width="1600" Height="1000">
         <Canvas  x:Name="GameON">
             <Canvas.Background>
-                <ImageBrush ImageSource="/Assets/resturant image.jpg"/>
+                <ImageBrush ImageSource="/Assets/Background.png"/>
             </Canvas.Background>
-
-            <Button x:Name="Pause_Continue" Content="Pause" Canvas.Left="45" Canvas.Top="30" FontWeight="Bold" Height="58" VerticalAlignment="Top" Width="80" Click="Pause_Continue_Click"/>
-            <Button x:Name="Reset" Content="Start" Canvas.Left="1154" Canvas.Top="30" FontWeight="Bold" Height="58" VerticalAlignment="Top" Width="80" Click="Reset_Click"/>
-            <TextBlock x:Name="Score" Canvas.Left="580" TextWrapping="Wrap" Text="score: " Canvas.Top="50" Height="55" Width="100" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <StackPanel>
+                <Button 
+                    x:Name="Reset" 
+                    FontSize="40" 
+                    Content="Start" 
+                    Canvas.Left="50" 
+                    Canvas.Top="30" 
+                    FontWeight="Bold" 
+                    CornerRadius="20"
+                    BorderThickness="4"
+                    BorderBrush="Black"
+                    Margin="15,15,0,0"
+                    Background="GreenYellow"
+                    Height="80" 
+                    VerticalAlignment="Top" 
+                    Width="300" 
+                    Click="Reset_Click"/>
+                <Button 
+                    x:Name="Pause_Continue" 
+                    Content="Pause" 
+                    FontSize="40"
+                    Background="GreenYellow"
+                    BorderBrush="Black"
+                    CornerRadius="20"
+                    Margin="15,10,0,0"
+                    BorderThickness="4"
+                    FontWeight="Bold" 
+                    Height="80" 
+                    VerticalAlignment="Top" 
+                    HorizontalAlignment="Right"
+                    Width="300" 
+                    Click="Pause_Continue_Click"/>
+                <TextBlock x:Name="Score" 
+                       Margin="15,10,0,0"
+                       TextWrapping="Wrap" 
+                       Foreground="Black"
+                       Text="score: " 
+                       TextAlignment="Center"
+                       Height="55"
+                       Width="300" 
+                       FontWeight="Bold" 
+                       FontSize="50"/>
+            </StackPanel>
+            
+            
         </Canvas>
     </Grid>
 

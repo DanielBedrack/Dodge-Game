@@ -13,8 +13,8 @@ namespace DodgeGame_Project
         static BitmapImage goodGuy = new BitmapImage(new Uri(@"ms-appx:///Assets/PeterGriffin.png"));
 
         public const int PLAYER_SPEED = 30;
-        const int WIDTH = 100;
-        const int HEIGHT = 100;
+        const int WIDTH = 150;
+        const int HEIGHT = 150;
 
         public PlayerUnit(int x, int y) : base(WIDTH, HEIGHT, PLAYER_SPEED, goodGuy)
         {
