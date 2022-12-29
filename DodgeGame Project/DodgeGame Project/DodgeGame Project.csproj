@@ -119,14 +119,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EnemyUnit.cs" />
-    <Compile Include="FallinDounat.cs" />
+    <Compile Include="GameUnits\EnemyUnit.cs" />
+    <Compile Include="GameUnits\FallinDounat.cs" />
     <Compile Include="GameBoard.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MovableUnits.cs" />
-    <Compile Include="PlayerUnit.cs" />
+    <Compile Include="GameUnits\MovableUnits.cs" />
+    <Compile Include="GameUnits\PlayerUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
